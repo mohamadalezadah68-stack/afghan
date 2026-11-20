@@ -1,18 +1,13 @@
-# Afghan Weather
+# Afghan web apps
 
-A responsive weather dashboard powered by the free [Open-Meteo API](https://open-meteo.com/). Search for a city or use your current location to see current conditions, an hourly outlook, and a five-day forecast. No API key is required.
+A collection of small, browser-based apps.
 
-## Run it
+## Weather dashboard
 
-Open `index.html` in a browser. For geolocation, serve the files from `localhost` or a secure HTTPS origin and allow location access. City search works without location permission.
+Open [`index.html`](index.html) to search for a city or use your location to view current conditions, an hourly forecast, and a five-day forecast. Weather data and geocoding are provided by [Open-Meteo](https://open-meteo.com/).
 
-## Features
+## Random joke generator
 
-- City lookup via Open-Meteo's geocoding API
-- Current conditions and five-day forecast
-- Hourly temperature outlook
-- Celsius/Fahrenheit toggle
-- Optional browser geolocation
-- Responsive layout and loading/error states
+Open [`joke.html`](joke.html) and select **Another joke** to fetch a random joke from [icanhazdadjoke.com](https://icanhazdadjoke.com/). You can also copy the joke to share it. No API key or build tools are required; serve the repository over HTTP or open the page in a browser.
 
-Weather data is provided by Open-Meteo and requires an internet connection.
+Both apps are responsive and run entirely in the browser.
