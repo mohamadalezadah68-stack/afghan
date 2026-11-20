@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101a2d">
+  <meta name="description" content="A simple digital clock for your favorite time zones.">
+  <title>World Clock — Afghan</title>
+  <link rel="stylesheet" href="clock.css">
+  <script src="clock.js" defer></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="clock.html" aria-label="World Clock home"><span class="brand-mark" aria-hidden="true">◷</span><span>WORLD<span class="brand-light">CLOCK</span></span></a>
+      <p class="live-indicator"><span aria-hidden="true"></span> LIVE TIME</p>
+    </header>
+
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">ONE WORLD, MANY HOURS</p>
+      <h1 id="page-title">Time, <span>everywhere.</span></h1>
+      <p class="intro-copy">Keep the moments that matter close. Your clocks update in real time.</p>
+    </section>
+
+    <section class="clock-section" aria-labelledby="clocks-heading">
+      <div class="section-heading">
+        <div><p class="eyebrow">YOUR PLACES</p><h2 id="clocks-heading">World clocks</h2></div>
+        <span class="clock-count" id="clock-count" aria-live="polite"></span>
+      </div>
+      <div class="clock-grid" id="clock-grid" aria-live="polite"></div>
+    </section>
+
+    <form class="add-form" id="add-form">
+      <div class="add-copy"><span class="plus" aria-hidden="true">+</span><div><strong>Add a time zone</strong><span>Choose a city to keep an eye on</span></div></div>
+      <label class="visually-hidden" for="timezone-select">Time zone</label>
+      <select id="timezone-select" required>
+        <option value="">Select a time zone…</option>
+      </select>
+      <button type="submit">Add clock <span aria-hidden="true">→</span></button>
+    </form>
+
+    <footer>Time zones adapt automatically to daylight saving time. <span>Made for wherever you are.</span></footer>
+  </main>
+</body>
+</html>
